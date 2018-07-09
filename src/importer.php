@@ -29,6 +29,8 @@ function jahia2wp_import ()
         ob_flush();
         ob_end_clean();
     }
+
+    posix_kill(getmypid(), SIGALRM);
 }
 
 function do_import ()
